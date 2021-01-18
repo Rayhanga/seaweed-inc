@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/Logo.png" type="image/x-icon"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/reset.css">
@@ -17,54 +18,50 @@
         </a>
         <ul>
             <li>
-                <a href="/habitat">
-                    Habitat
+                <a href="/#definisi">
+                    Definisi
                 </a>
             </li>
             <li>
-                <a href="/harga">
-                    Harga
+                <a href="/#morfologi-jenis-klasifikasi">
+                    Morfologi dan Jenis / Klasifikasi
                 </a>
             </li>
             <li>
-                <a href="/karakteristik">
-                    Karakteristik
-                </a>
-            </li>
-            <li>
-                <a href="/klasifikasi">
-                    Klasifikasi
-                </a>
-            </li>
-            <li>
-                <a href="/manfaat">
-                    Manfaat
-                </a>
-            </li>
-            <li>
-                <a href="/morfologi">
-                    Morfologi
-                </a>
-            </li>
-            <li>
-                <a href="/cara_budidaya">
+                <a href="/#cara-budidaya">
                     Cara Budidaya
                 </a>
             </li>
             <li>
-                <a href="/daerah_penghasil">
-                    Daerah Penghasil
+                <a href="/#negara-importir">
+                    Negara Importir
                 </a>
             </li>
             <li>
-                <a href="/negara_importir">
-                    Negara Importir
+                <a href="/#karakteristik">
+                    Karakteristik
+                </a>
+            </li>
+            <li>
+                <a href="/#habitat">
+                    Habitat
+                </a>
+            </li>
+            <li>
+                <a href="/#manfaat">
+                    Manfaat
+                </a>
+            </li>
+            <li>
+                <a href="/#harga">
+                    Harga
                 </a>
             </li>
         </ul>
     </nav>
     <main>
         <?php
+            header('Access-Control-Allow-Origin: *');
             $request = $_SERVER['REQUEST_URI'];
             switch ($request) {
                 case '/' :
@@ -88,6 +85,7 @@
                     break;
             }
         ?>
+    <button onclick="topFunction()" id="backToTopBtn" title="Kembali ke atas">^</button>
     </main>
     <footer>
         <div>
@@ -118,5 +116,22 @@
             </p>
         </div>
     </footer>
+    <script>
+        backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
 </body>
 </html>
