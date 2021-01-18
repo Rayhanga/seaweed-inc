@@ -1,4 +1,8 @@
 /* Default Elements */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     display: flex; 
     flex-direction: column; 
@@ -23,6 +27,22 @@ h2 {
 
 p {
     font-size: 0.75vw;
+}
+
+img.logo {
+    width: 7.5vw;
+    padding: 0px;
+}
+
+img.logo-footer {
+    width: 5vw;
+    padding: 0px;
+}
+
+img.avatar {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
 }
 
 /* Navbar */
@@ -72,6 +92,8 @@ main {
 main > * {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -113,10 +135,71 @@ footer > div:nth-of-type(1) > * {
     padding: 1rem;
 }
 
-footer> div:nth-of-type(2) > hr {
+footer > div:nth-of-type(2) > hr {
     width: 50%;
 }
 
-footer > div:nth-of-type(4) {
-    font-weight: 300;
+footer > div:nth-of-type(3) {
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+footer > div:nth-of-type(4) > p {
+    font-weight: 200; 
+    font-size: 0.75vw;
+}
+
+/* Classes */
+
+.container-left {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container-right {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container > div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about-container > div > img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+.about-container > div > p {
+    color: rgb(119, 119, 119);
+    font-weight: 200; 
+    font-size: 1vw;
+    font-style: italic;
+}
+
+.about-description {
+    text-align: center;
+    width: 50%;
+    align-self: center;
+}
+
+.about-description > p {
+    font-size: 1.25rem;
 }
