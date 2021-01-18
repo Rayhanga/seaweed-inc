@@ -25,6 +25,11 @@ h2 {
     font-weight: 500;
 }
 
+h3 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
 p {
     font-size: 0.75vw;
 }
@@ -195,11 +200,55 @@ footer > div:nth-of-type(4) > p {
 }
 
 .about-description {
-    text-align: center;
+    text-align: justify;
     width: 50%;
     align-self: center;
 }
 
+.about-description > h2 {
+    font-weight: 900;
+}
+
 .about-description > p {
     font-size: 1.25rem;
+}
+
+.daftar-pustaka {
+    text-align: center;
+    width: 75%;
+    align-self: center;
+}
+
+.daftar-pustaka h2 {
+    font-weight: 900;
+}
+
+.daftar-pustaka h3 {
+    font-weight: 700;
+}
+
+.daftar-pustaka li, .daftar-pustaka ul {
+    gap: 1rem; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.daftar-pustaka a {
+    color: black;
+}
+
+.daftar-pustaka a:hover {
+    text-decoration: underline;
+}
+
+.peta-situs h2 {
+    font-weight: 900;
+}
+
+.peta-situs a {
+    color: black;
+}
+
+.peta-situs a:hover {
+    text-decoration: underline;
 }

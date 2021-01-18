@@ -16,7 +16,6 @@
             <img src="./images/Logo.png" class="logo" alt="Logo Seaweed Inc.">
         </a>
         <ul>
-            <!-- TODO: Re-organize and group these links -->
             <li>
                 <a href="/habitat">
                     Habitat
@@ -91,7 +90,6 @@
         ?>
     </main>
     <footer>
-        <!-- Create the Footer -->
         <div>
             <a href="/peta_situs">
                 Peta Situs
@@ -103,7 +101,7 @@
             <a href="/daftar_pustaka">
                 Daftar Pustaka
             </a>
-            <a href="https://github.com/Rayhanga/seaweed-inc" target="_blank">
+            <a href="https://github.com/Rayhanga/seaweed-inc" target="_BLANK">
                 Source Code
             </a>
         </div>
@@ -115,7 +113,7 @@
             <img src="images/Rayhan.png" class="avatar" alt="Rayhan">
         </div>
         <div>
-            <p class="text-faint">
+            <p>
                 © Seaweed Inc. 2021. Created by Rayhan Gusty Alif & Rengganis Nurul Aini
             </p>
         </div>
